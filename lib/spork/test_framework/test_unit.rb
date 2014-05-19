@@ -1,6 +1,6 @@
 class Spork::TestFramework::TestUnit < Spork::TestFramework
   DEFAULT_PORT = 8988
-  HELPER_FILE  = "test/test_helper.rb"
+  HELPER_FILE  = "./test/test_helper.rb"
 
   def run_tests(argv, stderr, stdout)
     Object.send(:remove_const, :STDOUT); Object.send(:const_set, :STDOUT, stdout)
